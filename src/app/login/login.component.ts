@@ -50,8 +50,6 @@ export class LoginComponent implements OnInit {
   }
 
   handleJwtAuthLogin() {
-    console.log(this.username);
-    console.log(this.password);
     this.jwtAuthenticationService.executeAuthService(this.username, this.password).subscribe(
       data => {
         console.log('Passed');
