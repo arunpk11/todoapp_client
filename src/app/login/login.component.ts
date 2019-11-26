@@ -27,8 +27,6 @@ export class LoginComponent implements OnInit {
   }
 
   handleLogin() {
-    // console.log(this.username);
-    // console.log(this.password);
     if (this.hardcodedAuthenticationService.authenticate(this.username, this.password)) {
       this.router.navigate(['welcome', this.username]);
       this.isInvalidLogin = false;
@@ -38,8 +36,6 @@ export class LoginComponent implements OnInit {
   }
 
   handleBasicAuthLogin() {
-    console.log(this.username);
-    console.log(this.password);
     this.basicAuthenticationService.executeAuthService(this.username, this.password).subscribe(
       data => {
         console.log('Passed');
