@@ -1,2 +1,2 @@
-export const API_URL = 'http://localhost:8080';
-export const DATA_URL = 'http://localhost:8080/jpa';
+export const API_URL = 'https://pk-todo-app.herokuapp.com';
+export const DATA_URL = 'https://pk-todo-app.herokuapp.com/jpa';
