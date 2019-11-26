@@ -1,0 +1,25 @@
+<div class='container' center>
+    <table class='table-borderless center'>
+        <tr>
+            <td colspan=2>
+                <div *ngIf='isInvalidLogin' class='container alert-danger'>{{errorMessage}}</div>
+            </td>
+        </tr>
+        <tr class='container'>
+            <td>Username : </td>
+            <td><input type="text" name="username" [(ngModel)]="username" /></td>
+        </tr>
+        <tr class='container'>
+            <td>Password : </td>
+            <td><input type="password" name="password" [(ngModel)]="password" /></td>
+        </tr>
+        <!-- <tr class='container'>
+            <td colspan=2><button (click)=handleBasicAuthLogin() class='btn btn-success'>Login</button></td>
+        </tr> -->
+        <tr class='container'>
+            <td colspan=2><button (click)=handleJwtAuthLogin() class='btn btn-success'>Login</button></td>
+        </tr>
+    </table>
+    <!-- // Username is {{username}}  -->
+</div>
+<!-- <div *ngIf = 'isInvalidLogin' class='container alert-danger'>{{errorMessage}}</div> -->
